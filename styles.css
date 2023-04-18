@@ -1,0 +1,111 @@
+@font-face {
+    @font-face {
+        font-family: 'Rockledge Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Rockledge Regular'), url('https://maurojota.com/codechella/src/font/rockledge.woff') format('woff');
+    }
+}
+
+.rockledge {
+    font-family: 'Rockledge Regular';
+    font-weight: normal;
+}
+
+.nav-menu {
+    min-height: 96px;
+}
+
+h4,
+h5,
+h6,
+p1 {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+/*testes*/
+.bg-1 {
+    background-color: #222;
+}
+
+.bg-2 {
+    background-color: #e3e3e3;
+}
+
+/*testes*/
+
+.banner-principal {
+    height: 580px;
+    background: url(https://www.maurojota.com/codechella/src/BANNER-PRINCIPAL.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.azul-primario {
+    background-color: #017ab0 !important;
+}
+
+.cinza-escuro {
+    background-color: #333;
+}
+
+.bege-fundo {
+    background-color: #fdf2cf;
+}
+
+.laranja-primario {
+    background-color: #ed6823;
+}
+
+.sabado,
+domingo {
+    width: 200px;
+}
+
+.rodape {
+    min-height: 160px;
+}
+
+.conteudo {
+    padding-top: 32px;
+    padding-bottom: 128px;
+    background-image: url("https://maurojota.com/codechella/src/bt-bg.jpg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.quadro-main {
+    min-height: 100vh;
+}
+
+.navbar-brand img,
+.rodape img {
+    height: 2rem;
+}
+
+.logo {
+    height: 240px;
+}
+
+.cta {
+    border: 2px solid black !important;
+    box-shadow: 1px 3px 0px black;
+}
+
+.traco-separador {
+    width: 320px;
+    height: 2px;
+}
+
+.social img {
+    width: 36px;
+}
+
+.social,
+assinatura {
+    width: 200px;
+}
+
+.assinatura p {
+    font-size: 0.55rem;
+}
