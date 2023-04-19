@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-menu azul-primario fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://www.maurojota.com/codechella/src/logo-hor-br.svg" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">A EXPERIÊNCIA</a>
+            <a class="nav-link" href="#">MAPA DE SETORES</a>
+            <a class="nav-link" href="#">INFORMAÇÕES</a>
+            <a class="nav-link">INGRESSOS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner-principal container-fluid bg-1 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center text-white rockledge titulo">garanta seu ingresso
+    </h1>
+  </div>
+
+  <main class="quadro-main container-fluid d-flex flex-column justify-content-between px-0 align-items-stretch">
+    <div class="conteudo container-fluid bege-fundo d-flex flex-column flex-fill align-items-center">
+      <div class="maxw-12 container">
+        <section class="">
+          <h2 class="text-center">Perguntas frequentes</h2>
+
+          <form action="ingresso.html">
+            <div class="mb-3">
+              <label for="nomecompleto" class="form-label">Nome completo</label>
+              <input type="text" class="form-control" id="nomecompleto" aria-describedby="nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+            </div>
+            <div class="input-group mb-3">
+              <select class="form-select" id="tipo_ingresso">
+                <option selected>Escolha</option>
+                <option value="Pista">Pista</option>
+                <option value="Pista Premium">Pista Premium</option>
+                <option value="VIP">VIP</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Data do show" id="data">
+                <option value="sábado e domingo" selected>sábado e domingo</option>
+                <option value="sábado">sábado</option>
+                <option value="domingo">domingo</option>
+              </select>
+            </div>
+            <button type="submit" class="submit btn btn-primary" onclick="submit_data();">Submit</button>
+          </form>
+
+        </section>
+
+      </div>
+    </div>
+    <div class="rodape container-fluid cinza-escuro d-flex flex-column justify-content-center align-items-center pt-4">
+      <img src="https://www.maurojota.com/codechella/src/logo-hor-bg.svg" />
+      <div class="social d-flex flex justify-content-between mt-4">
+        <img src="https://www.maurojota.com/codechella/src/ig.svg" />
+        <img src="https://www.maurojota.com/codechella/src/wpp.svg" />
+        <img src="https://www.maurojota.com/codechella/src/twt.svg" />
+        <img src="https://www.maurojota.com/codechella/src/yt.svg" />
+      </div>
+      <div class="assinatura mt-5">
+        <p class="text-white text-uppercase te">Projeto fictício | desenvolvido por mauro j.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    function submit_data() {
+      var nome = document.querySelector("#nomecompleto").value;
+      var email = document.querySelector("#email").value;
+      var tipo_ingresso = document.querySelector("#tipo_ingresso").value;
+      var data = document.querySelector("#data").value;
+      localStorage.setItem('nomecompleto', nome);
+      localStorage.setItem('email', email);
+      localStorage.setItem('tipo', tipo_ingresso);
+      localStorage.setItem('data', data);
+    };
+
+  </script>
+
+
+
+</body>
+
+</html>

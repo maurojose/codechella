@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeChella</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-menu azul-primario fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        src="https://www.maurojota.com/codechella/src/logo-hor-br.svg" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">A EXPERIÊNCIA</a>
+                        <a class="nav-link" href="#">MAPA DE SETORES</a>
+                        <a class="nav-link" href="#">INFORMAÇÕES</a>
+                        <a class="nav-link">INGRESSOS</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-principal container-fluid bg-1 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center">Seu ingresso está aqui!</h1>
+    </div>
+
+    <main class="quadro-main container-fluid d-flex flex-column justify-content-between px-0 align-items-stretch">
+        <div class="conteudo container-fluid bege-fundo d-flex flex-column flex-fill align-items-center row">
+            <h2 class="text-center col-8 mb-5">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
+            <div class="col-8 bg-2 row">
+              <div class="d-flex justify-content-start col-12">
+                <img src="https://www.maurojota.com/codechella/src/logo-hor-br.svg" width="320px" />
+              </div>
+              <div class="col-12 row">
+                <div class="col-6"><QR-code></QR-code></div>
+                <div class="col-6 row">
+                  <h3 class="col-12" id="nome">Nome</h3>
+                  <p class="col-12" id="email">E-mail</p>
+                  <p class="col-12" id="tipo">Tipo de ingresso</p>
+                  <p class="col-12" id="data">Datas</p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <div class="rodape container-fluid cinza-escuro d-flex flex-column justify-content-center align-items-center pt-4">
+            <img src="https://www.maurojota.com/codechella/src/logo-hor-bg.svg" />
+            <div class="social d-flex flex justify-content-between mt-4">
+                <img src="https://www.maurojota.com/codechella/src/ig.svg" />
+                <img src="https://www.maurojota.com/codechella/src/wpp.svg" />
+                <img src="https://www.maurojota.com/codechella/src/twt.svg" />
+                <img src="https://www.maurojota.com/codechella/src/yt.svg" />
+            </div>
+            <div class="assinatura mt-5">
+                <p class="text-white text-uppercase te">Projeto fictício | desenvolvido por mauro josé</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+        <script>
+          var nome = localStorage.getItem('nomecompleto');
+          var email = localStorage.getItem('email');
+          var tipo = localStorage.getItem('tipo');
+          var data = localStorage.getItem('data');
+      
+          var nome_input = document.querySelector('#nome');
+          nome_input.innerText = nome;
+          var email_input = document.querySelector('#email');
+          email_input.innerText = email;
+          var tipo_input = document.querySelector('#tipo');
+          tipo_input.innerText = tipo;
+          var data_input = document.querySelector('#data');
+          data_input.innerText = data;
+        </script>
+
+
+</body>
+
+</html>
