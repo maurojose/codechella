@@ -27,8 +27,8 @@ h1,h2,h3,h4,h5,h6{
     background-position: bottom;
 }
 #logo-glitch{
-    height: 96px;
-    width: 540px;
+    max-height: 96px;
+    max-width: 540px;
 }
 
 /*CORES*/
@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .navbar-brand img{
-    width:10vh;
+    max-width:200px;
 }
 .rodape img {
     height: 2rem;
