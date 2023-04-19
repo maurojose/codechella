@@ -77,7 +77,9 @@ h1,h2,h3,h4,h5,h6{
     min-height: 100vh;
 }
 
-.navbar-brand img,
+.navbar-brand img{
+    width:1rem;
+}
 .rodape img {
     height: 2rem;
 }
