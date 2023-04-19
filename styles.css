@@ -1,26 +1,12 @@
-@font-face {
-    @font-face {
-        font-family: 'Rockledge Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Rockledge Regular'), url('https://maurojota.com/codechella/src/font/rockledge.woff') format('woff');
-    }
+html{
+    font-family: 'Roboto', sans-serif !important;  
 }
-
-.rockledge {
-    font-family: 'Rockledge Regular';
-    font-weight: normal;
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+    text-transform:uppercase;
 }
-
 .nav-menu {
     min-height: 96px;
-}
-
-h4,
-h5,
-h6,
-p1 {
-    font-family: 'Raleway', sans-serif !important;
 }
 
 /*testes*/
@@ -35,31 +21,47 @@ p1 {
 /*testes*/
 
 .banner-principal {
-    height: 580px;
-    background: url(https://www.maurojota.com/codechella/src/BANNER-PRINCIPAL.jpg);
+    height: 700px;
+    background: url(SRC/BANNER_CODECHELLA.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+}
+#logo-glitch{
+    height: 96px;
+    width: 540px;
 }
 
+/*CORES*/
+
+.rosa-primario{
+    background-color: #e505e5;
+}
 .azul-primario {
-    background-color: #017ab0 !important;
+    background-color: #02edec !important;
 }
-
+.branco{
+    background-color: #fff !important;
+}
+.preto{
+    background-color: #222222;
+}
 .cinza-escuro {
     background-color: #333;
 }
 
-.bege-fundo {
-    background-color: #fdf2cf;
+.glitch-1{
+    box-shadow: -1px 2px 0px #02ecec, 1px -2px 0px #e505e5;
+}
+.glitch-1-txt:hover{
+    text-shadow: -1px 1px 0px #02ecec, 1px -1px 0px #e505e5;;
 }
 
-.laranja-primario {
-    background-color: #ed6823;
+/*cores tipografia*/
+.rosa-primario-txt{
+    color: #e505e5;
 }
-
-.sabado,
-domingo {
-    width: 200px;
+.azul-primario-txt{
+    color: #02edec;
 }
 
 .rodape {
@@ -69,9 +71,6 @@ domingo {
 .conteudo {
     padding-top: 32px;
     padding-bottom: 128px;
-    background-image: url("https://maurojota.com/codechella/src/bt-bg.jpg");
-    background-position: bottom;
-    background-repeat: repeat-x;
 }
 
 .quadro-main {
@@ -82,14 +81,16 @@ domingo {
 .rodape img {
     height: 2rem;
 }
-
-.logo {
-    height: 240px;
+.logo-glitch-preto{
+    height: 2.2rem;
 }
 
 .cta {
-    border: 2px solid black !important;
-    box-shadow: 1px 3px 0px black;
+    border: 2px solid white !important;
+    box-shadow: -2px 4px 0px #02ecec;
+}
+.cta:hover{
+    box-shadow: -2px 4px 0px #02ecec, 2px -4px 0px #e505e5;
 }
 
 .traco-separador {
