@@ -1,115 +1,115 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">  
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeChella - Setores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
-  <body>
-    
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-dark nav-menu azul-primario fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://www.maurojota.com/codechella/src/logo-hor-br.svg"/></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">A EXPERIÊNCIA</a>
-        <a class="nav-link" href="#">MAPA DE SETORES</a>
-        <a class="nav-link" href="#">INFORMAÇÕES</a>
-        <a class="nav-link">INGRESSOS</a>
+
+<body onload="glitch_titulos();">
+
+  <header>
+    <nav class="navbar navbar-expand-lg nav-menu fixed-top branco ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="SRC/LOGO-PRETO.svg" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link glitch-1-txt" aria-current="page" href="experiencia.html">A EXPERIÊNCIA</a>
+            <a class="nav-link active glitch-1-txt" href="setores.html">MAPA DE SETORES</a>
+            <a class="nav-link glitch-1-txt" href="faq.html">INFORMAÇÕES</a>
+            <a class="nav-link glitch-1-txt" href="garanta.html">INGRESSOS</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
+  </header>
+
+  <div class="banner-principal banner-menor container-fluid bg-1 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center text-white txt-bold" id="titulo">MAPA DE SETORES
+    </h1>
   </div>
-</nav>
-    </header>
-    
-    <div class="banner-principal container-fluid bg-1 d-flex flex-column justify-content-center align-items-center">
-      <h1 class="text-center text-white rockledge">MAPA DE SETORES
-        </h1>
-    </div>
-    
-    <main class="quadro-main container-fluid d-flex flex-column justify-content-between px-0 align-items-stretch">
-    <div class="conteudo container-fluid bege-fundo d-flex flex-column flex-fill align-items-center">
+
+  <main class="quadro-main container-fluid d-flex flex-column justify-content-between px-0 align-items-stretch branco-txt">
+    <div class="conteudo container-fluid preto d-flex flex-column flex-fill align-items-center">
       <div class="maxw-12 container">
         <div class="row mb-5">
-          <div class=" d-flex col-sm-12 col-md-6 bg-1 justify-content-center align-items-center">
+          <div class=" d-flex col-sm-12 col-md-7 bg-1 justify-content-center align-items-center">
             <img class="img-exp" src="https://www.maurojota.com/codechella/src/mapa.png" />
           </div>
-          <div class="d-flex col-sm-12 col-md-6 bg-2 p-5 justify-content-start align-items-center">
+          <div class="d-flex col-sm-12 col-md-5 bg-2 p-5 justify-content-start align-items-center">
             <div>
-            <h2>Legenda</h2>
-            <ul class="list-group">
-  <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-              
+              <h2>Legenda</h2>
+              <ul class="list-group list-group-flush preto" data-bs-theme="dark">
+                <li class="list-group-item preto d-flex align-items-center"> <div class="st premium"></div>Pista Premium</li>
+                <li class="list-group-item preto d-flex align-items-center"><div class="st comum"></div> Pista comum</li>
+                <li class="list-group-item preto d-flex align-items-center"><div class="st terreo"></div>Cadeiras térreo</li>
+                <li class="list-group-item preto d-flex align-items-center"><div class="st superiores"></div>Cadeiras superiores</li>
+                <li class="list-group-item preto d-flex align-items-center"><div class="st rampas"></div>Rampas</li>
+              </ul>
             </div>
           </div>
         </div>
-        <section >
+        <section>
           <h2 class="text-center">Mais detalhes sobre os setores:</h2>
-        <div class="row my-5 bg-1">
-          <div class="d-flex col-sm-12 col-md-4 bg-2 p-3 justify-content-center">
-            
-            <div>
-            <h3>Pista</h3>
-            <p>Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+          <div class="row my-5 bg-1">
+            <div class="d-flex col-sm-12 col-md-4 bg-2 p-3 justify-content-center">
+
+              <div>
+                <img class="img-exp mb-4" src="src/pista.png"/>
+                <h3>Pista</h3>
+                <p>Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+              </div>
             </div>
-          </div>
-          
-          <div class="d-flex col-sm-12 col-md-4 bg-3 p-3 justify-content-center">
-            
-            <div>
-            <h3>Pista premium</h3>
-            <p>Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+
+            <div class="d-flex col-sm-12 col-md-4 bg-3 p-3 justify-content-center">
+
+              <div>
+                <img class="img-exp mb-4" src="SRC/premium.png"/>
+                <h3>Pista premium</h3>
+                <p>Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.</p>
+              </div>
             </div>
-          </div>
-          
-          <div class="d-flex col-sm-12 col-md-4 bg-2 p-3 justify-content-center">
-            
-            <div>
-            <h3>vip</h3>
-            <p>Pista convencional, atendida pelos bares e banheiros das laterais do estádio. Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.</p>
+
+            <div class="d-flex col-sm-12 col-md-4 bg-2 p-3 justify-content-center">
+
+              <div>
+                <img class="img-exp mb-4" src="SRC/cadeiras.png"/>
+                <h3>Cadeiras</h3>
+                <p>Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.</p>
+              </div>
             </div>
+
           </div>
-         
-          
-        </div>
-          
+
         </section>
       </div>
     </div>
-    <div class="rodape container-fluid cinza-escuro d-flex flex-column justify-content-center align-items-center pt-4">
-      <img src="https://www.maurojota.com/codechella/src/logo-hor-bg.svg"/>
+    <footer class="rodape container-fluid branco d-flex flex-column justify-content-center align-items-center pt-4">
+      <div class="logo-glitch-preto"><img src="SRC/LOGO-PRETO.svg" /></div>
       <div class="social d-flex flex justify-content-between mt-4">
-        <img src="https://www.maurojota.com/codechella/src/ig.svg" />
-        <img src="https://www.maurojota.com/codechella/src/wpp.svg" />
-        <img src="https://www.maurojota.com/codechella/src/twt.svg" />
-        <img src="https://www.maurojota.com/codechella/src/yt.svg" />
+        <img src="SRC/ig.svg" />
+        <img src="SRC/wpp.svg" />
+        <img src="SRC/twt.svg" />
+        <img src="SRC/yt.svg" />
       </div>
       <div class="assinatura mt-5">
-        <p class="text-white text-uppercase te">Projeto fictício | desenvolvido por mauro josé</p>
+        <p class="text-uppercase te">Projeto fictício | desenvolvido por Mauro J.</p>
       </div>
-      
-      </div>
-         
-         </main>
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="glitch.js"></script>
+</body>
+
 </html>

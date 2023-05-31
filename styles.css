@@ -11,6 +11,9 @@ h6 {
     font-weight: 300;
     text-transform: uppercase;
 }
+.txt-bold{
+    font-weight: 700;
+}
 
 .nav-menu {
     min-height: 96px;
@@ -21,6 +24,9 @@ h6 {
     background: url(SRC/BANNER_CODECHELLA.jpg);
     background-size: cover;
     background-position: bottom;
+}
+.banner-menor{
+    height: 480px;
 }
 
 /*CORES*/
@@ -38,7 +44,7 @@ h6 {
 }
 
 .preto {
-    background-color: #222222;
+    background-color: #222222 !important;
 }
 
 .cinza-escuro {
@@ -46,6 +52,15 @@ h6 {
 }
 
 /*cores tipografia*/
+.branco-txt{
+    color: #fff;
+}
+.preto-txt{
+    color: #222222;
+}
+.cinza-txt{
+    color: #636262;
+}
 .rosa-primario-txt {
     color: #e505e5;
 }
@@ -61,10 +76,14 @@ h6 {
 .glitch-1 {
     box-shadow: -1px 2px 0px #02ecec, 1px -2px 0px #e505e5;
 }
-
 .glitch-1-txt:hover {
     text-shadow: -1px 1px 0px #02ecec, 1px -1px 0px #e505e5;
-    ;
+}
+.glitch-2-txt:hover {
+    text-shadow: -2px 2px 0px #02ecec, 2px -2px 0px #e505e5;
+}
+.glitch-2-txt-after {
+    text-shadow: -2px 2px 0px #02ecec, 2px -2px 0px #e505e5;
 }
 
 #logo-glitch {
@@ -117,4 +136,28 @@ assinatura {
 
 .assinatura p {
     font-size: 0.55rem;
+}
+.img-exp{
+    max-width: 480px;
+    width: 100%;
+}
+.st{
+    width:12px ;
+    height: 12px;
+    margin-right: 8px;
+}
+.premium{
+    background-color: #0E7DF1;
+}
+.comum{
+    background-color: #FE016E;
+}
+.terreo{
+    background-color: #01A89E;
+}
+.superiores{
+    background-color: #3F51B5;
+}
+.rampas{
+    background-color: #003F86;
 }
