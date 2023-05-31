@@ -1,24 +1,20 @@
-html{
-    font-family: 'Roboto', sans-serif !important;  
+html {
+    font-family: 'Roboto', sans-serif !important;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 300;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
 .nav-menu {
     min-height: 96px;
 }
-
-/*testes*/
-.bg-1 {
-    background-color: #222;
-}
-
-.bg-2 {
-    background-color: #e3e3e3;
-}
-
-/*testes*/
 
 .banner-principal {
     height: 700px;
@@ -26,41 +22,35 @@ h1,h2,h3,h4,h5,h6{
     background-size: cover;
     background-position: bottom;
 }
-#logo-glitch{
-    max-height: 96px;
-    max-width: 540px;
-}
 
 /*CORES*/
 
-.rosa-primario{
+.rosa-primario {
     background-color: #e505e5;
 }
+
 .azul-primario {
     background-color: #02edec !important;
 }
-.branco{
+
+.branco {
     background-color: #fff !important;
 }
-.preto{
+
+.preto {
     background-color: #222222;
 }
+
 .cinza-escuro {
     background-color: #333;
 }
 
-.glitch-1{
-    box-shadow: -1px 2px 0px #02ecec, 1px -2px 0px #e505e5;
-}
-.glitch-1-txt:hover{
-    text-shadow: -1px 1px 0px #02ecec, 1px -1px 0px #e505e5;;
-}
-
 /*cores tipografia*/
-.rosa-primario-txt{
+.rosa-primario-txt {
     color: #e505e5;
 }
-.azul-primario-txt{
+
+.azul-primario-txt {
     color: #02edec;
 }
 
@@ -68,36 +58,52 @@ h1,h2,h3,h4,h5,h6{
     min-height: 160px;
 }
 
+.glitch-1 {
+    box-shadow: -1px 2px 0px #02ecec, 1px -2px 0px #e505e5;
+}
+
+.glitch-1-txt:hover {
+    text-shadow: -1px 1px 0px #02ecec, 1px -1px 0px #e505e5;
+    ;
+}
+
+#logo-glitch {
+    width: 90%;
+    max-width: 600px;
+    min-height: 100px;
+}
+
+#logo-glitch img {
+    width: inherit;
+}
+
 .conteudo {
     padding-top: 32px;
     padding-bottom: 128px;
+    background-image: url("SRC/BG-BT.jpg");
+    background-position: bottom;
+    background-repeat: repeat-x;
 }
 
 .quadro-main {
     min-height: 100vh;
 }
 
-.navbar-brand img{
-    max-width:200px;
+.navbar-brand img {
+    width: 180px;
 }
+
 .rodape img {
     height: 2rem;
-}
-.logo-glitch-preto{
-    height: 2.2rem;
 }
 
 .cta {
     border: 2px solid white !important;
     box-shadow: -2px 4px 0px #02ecec;
 }
-.cta:hover{
-    box-shadow: -2px 4px 0px #02ecec, 2px -4px 0px #e505e5;
-}
 
-.traco-separador {
-    width: 320px;
-    height: 2px;
+.cta:hover {
+    box-shadow: -2px 4px 0px #02ecec, 2px -4px 0px #e505e5;
 }
 
 .social img {
